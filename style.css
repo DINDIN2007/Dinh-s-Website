@@ -2,30 +2,43 @@ body {
     margin:0px;
 }
 
+/*HEADER*/
+
 #Header {
     padding:20px;
     background-color: bisque;
-    height:40px;
+    height:50px;
 }
 
 #Profil_Picture {
+    margin-right:10px;
+    margin-top:5px;
     width:40px;
     height:40px;
     border-radius: 20px;
 }
 
 #Header table {
-    float: left;
+    float: right;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    height:50px;
 }
 
-#Header table td {
-    width: 100px;
+.Menu_Selections {
+    background-color: bisque;
+    border-radius: 10px;
+    padding:0px 20px 0px 20px;
 }
 
 #Header table a {
     text-decoration: none;
+    user-select: none;
+    color:black;
 }
 
-#Header table a:hover {
-    font-weight:bold;
+#Header table td:hover {
+    filter: brightness(90%);
 }
+
+/*WELCOME*/
