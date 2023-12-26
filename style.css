@@ -1,7 +1,31 @@
 body {
-    background-color: black;
+    margin:0px;
 }
 
-#name {
-    color:white;
+#Header {
+    padding:20px;
+    background-color: bisque;
+    height:40px;
+}
+
+#Profil_Picture {
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+}
+
+#Header table {
+    float: left;
+}
+
+#Header table td {
+    width: 100px;
+}
+
+#Header table a {
+    text-decoration: none;
+}
+
+#Header table a:hover {
+    font-weight:bold;
 }
