@@ -1,13 +1,15 @@
 body {
     margin:0px;
+    background-color: #ffffff;
 }
 
 /*HEADER*/
 
 #Header {
     padding:20px;
-    background-color: bisque;
+    background-color: #DC851F;
     height:50px;
+    margin-bottom:0px;
 }
 
 #Profil_Picture {
@@ -26,7 +28,7 @@ body {
 }
 
 .Menu_Selections {
-    background-color: bisque;
+    background-color: #DC851F;
     border-radius: 10px;
     padding:0px 20px 0px 20px;
 }
@@ -42,3 +44,23 @@ body {
 }
 
 /*WELCOME*/
+
+#Welcome_Page {
+    background-color: #FFA737;
+    margin-top:-30px;
+    height:600px;
+}
+
+#Title {
+    font-size: 150px;
+    margin:30px;
+}
+
+/*
+COLOR PALETTE
+- Orange Peel : FFA737
+- Fulvous : DC851F
+- Field Drab : 7E5920
+- Drab dark brown : 45462A
+- Jet : 343330
+*/
