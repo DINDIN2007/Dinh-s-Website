@@ -25,7 +25,7 @@ function resetTypingAnimation() {
     if (currentTime - lastTime >= delay) {
         // Reset Animation
         if (isTypingRight) {
-            if (messageIndex == 2) findHour();
+            if (messageIndex == 1) findHour();
             let cm = message[messageIndex].length;
             document.documentElement.style.setProperty('--message-current-length', cm + 'ch');
 

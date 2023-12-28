@@ -1,6 +1,7 @@
 body {
     margin:0px;
     background-color: #ffffff;
+    height: 2000px;
 }
 
 /*
@@ -117,7 +118,7 @@ body {
 }
 
 @keyframes reverseTyping {
-    from {width: 12ch;}
+    from {width: var(--message-current-length);}
 }
       
 @keyframes blink {
