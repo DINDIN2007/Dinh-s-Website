@@ -97,7 +97,7 @@ body {
     margin:30px;
 }
 
-.typing-anim {
+#typing-anim {
     width: 12ch;
     animation: typing 1s steps(12), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -114,6 +114,10 @@ body {
 
 @keyframes typing {
     from {width: 0;}
+}
+
+@keyframes reverseTyping {
+    from {width: 12ch;}
 }
       
 @keyframes blink {
