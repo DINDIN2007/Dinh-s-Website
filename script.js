@@ -1,6 +1,6 @@
 var typingClass = document.getElementById("typing-anim");
 var lastTime = (new Date()).getTime(), isTypingRight = true, delay = 5000;
-var message = ["Hello World!", "Greetings...", "Good ", "¿Qué tal?", "Xin Chào"];
+var message = ["Hello World!", "Greetings...", "Good ", "Hola ¿Qué tal?", "Xin Chào"];
 var messageIndex = 0;
 
 // Find what time of the day
@@ -8,13 +8,13 @@ function findHour() {
     let currentHour = (new Date()).getHours();
     
     // Morning 5 am to 12 pm (noon)
-    if (currentHour >= 5 && currentHour < 12) message[2] = "Good Morning";
+    if (currentHour >= 5 && currentHour < 12) message[2] = "Good Morning 🌅 ";
     // Afternoon 12 pm to 5 pm.
-    else if (currentHour >= 12 && currentHour < 17) message[2] = "Good Afternoon";
+    else if (currentHour >= 12 && currentHour < 17) message[2] = "Good Afternoon ☀️ ";
     // Evening 5 pm to 9 pm.
-    else if (currentHour >= 17 && currentHour < 9) message[2] = "Good Evening";
+    else if (currentHour >= 17 && currentHour < 9) message[2] = "Good Evening 🌄 ";
     // Night 9 pm to 4 am.
-    else message[2] = "Good Night";
+    else message[2] = "Good Night 🛏️ ";
 
     console.log(currentHour);
 }
@@ -45,6 +45,7 @@ function resetTypingAnimation() {
 
         // Reset Timer
         lastTime = (new Date()).getTime();
+        delay = Math.floor(Math.random() * 3000 + 2000);
     }
 }
 
@@ -56,3 +57,17 @@ function animate() {
 }
 
 animate();
+
+var header = document.getElementById("Header");
+var sticky = header.offsetTop;
+
+window.onscroll = function() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        header.classList.remove("backgroundHeader");
+    }
+    else {
+        header.classList.add("backgroundHeader");
+        header.classList.remove("sticky");
+    }
+};
